@@ -1,0 +1,10 @@
+Tablas:
+Usuario
+Producto
+Pedido
+PedidosPendientes
+PedidosUsuario
+Par
+
+Relaciones:
+Pedidospendientes 1:Pedido M

@@ -1,0 +1,441 @@
+{
+	"info": {
+		"name": "minimo1-2017",
+		"_postman_id": "b8bf8af8-ae05-ecad-7aa6-3eb716f571a2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getProductosPrecio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/myapp/ProductosPorPrecio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myapp",
+						"ProductosPorPrecio"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "fedcffd4-f69c-4d3d-af13-b235389a22da",
+					"name": "getProductosPrecio",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/myapp/ProductosPorPrecio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"myapp",
+								"ProductosPorPrecio"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "163",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Nov 2017 12:18:31 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1416,
+					"body": "[{\"nombre\":\"clavos\",\"numeroPedidos\":30,\"precio\":0.01},{\"nombre\":\"pegamento\",\"numeroPedidos\":1,\"precio\":2.14},{\"nombre\":\"silicona\",\"numeroPedidos\":1,\"precio\":3.14}]"
+				}
+			]
+		},
+		{
+			"name": "getProductosVentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/myapp/ProductosPorVentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myapp",
+						"ProductosPorVentas"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "d4bf0862-55f7-4ee7-8961-fdab5a706a84",
+					"name": "getProductosVentas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/myapp/ProductosPorVentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"myapp",
+								"ProductosPorVentas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "163",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Nov 2017 12:23:03 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"responseTime": 20,
+					"body": "[{\"nombre\":\"clavos\",\"numeroPedidos\":30,\"precio\":0.01},{\"nombre\":\"silicona\",\"numeroPedidos\":1,\"precio\":3.14},{\"nombre\":\"pegamento\",\"numeroPedidos\":1,\"precio\":2.14}]"
+				}
+			]
+		},
+		{
+			"name": "addPedido",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"usuario\":{\"nombre\":\"juan\",\"email\":\"juan@gmail.com\",\"password\":\"1234\"},\"productos\":[{\"nombreProducto\":\"silicona\",\"cantidad\":60}]}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/myapp/addPedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myapp",
+						"addPedido"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "7cebf924-7efb-412a-ad25-0c5781d0c40c",
+					"name": "addPedido",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"usuario\":{\"nombre\":\"juan\",\"email\":\"juan@gmail.com\",\"password\":\"1234\"},\"productos\":[{\"nombreProducto\":\"silicona\",\"cantidad\":60}]}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/myapp/addPedido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"myapp",
+								"addPedido"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "27",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Nov 2017 12:31:29 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"responseTime": 1007,
+					"body": "{\"result\":\"Añadir pedido\"}"
+				},
+				{
+					"id": "9b058996-f41f-4112-87fb-32531483571c",
+					"name": "addPedido",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"usuario\":{\"nombre\":\"juan\",\"email\":\"juan@gmail.com\",\"password\":\"1234\"},\"productos\":[{\"nombreProducto\":\"patata\",\"cantidad\":60}]}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/myapp/addPedido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"myapp",
+								"addPedido"
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "29",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Nov 2017 12:32:25 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"responseTime": 531,
+					"body": "{\"result\":\"pedido no valido\"}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/myapp/servirPedido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/myapp/servirPedido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myapp",
+						"servirPedido"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "01e9b34c-0ecc-49a3-8468-24602c25a7d8",
+					"name": "http://localhost:8080/myapp/servirPedido",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/myapp/servirPedido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"myapp",
+								"servirPedido"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "153",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Nov 2017 12:33:59 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"responseTime": 573,
+					"body": "{\"productos\":[{\"cantidad\":60,\"nombreProducto\":\"silicona\"}],\"usuario\":{\"email\":\"juan@gmail.com\",\"nombre\":\"juan\",\"password\":\"1234\",\"pedidosRealizados\":[]}}"
+				}
+			]
+		},
+		{
+			"name": "getPedidosusuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/myapp/getPedidosusuario/juan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myapp",
+						"getPedidosusuario",
+						"juan"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "b3956819-1b53-422e-b1ba-fe2bfe65bf88",
+					"name": "getPedidosusuario",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/myapp/getPedidosusuario/juan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"myapp",
+								"getPedidosusuario",
+								"juan"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "309",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Nov 2017 12:40:21 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"responseTime": 5,
+					"body": "[{\"productos\":[{\"cantidad\":60,\"nombreProducto\":\"silicona\"}],\"usuario\":{\"email\":\"juan@gmail.com\",\"nombre\":\"juan\",\"password\":\"1234\",\"pedidosRealizados\":[]}},{\"productos\":[{\"cantidad\":30,\"nombreProducto\":\"silicona\"}],\"usuario\":{\"email\":\"juan@gmail.com\",\"nombre\":\"juan\",\"password\":\"1234\",\"pedidosRealizados\":[]}}]"
+				}
+			]
+		}
+	]
+}
